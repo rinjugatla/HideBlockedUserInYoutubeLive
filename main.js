@@ -44,6 +44,7 @@ window.addEventListener('load', function () {
     function hideCard(){
         // 非表示でないチャットガイドラインカードを取得するXPath
         // 「チャットへようこそ！ご自身のプライバシーを守るとともに、YouTube のコミュニティ ガイドラインを遵守することを忘れないでください。」
+        // 「チャンネル登録者のみモード。このチャンネルの登録期間が 10 分 以上のユーザーからのメッセージが表示されます。」
         var targetsXPath = '//yt-live-chat-viewer-engagement-message-renderer[@class="style-scope yt-live-chat-item-list-renderer" and not(@style="display: none;")]';
         var targets = document.getElementsByXPath(targetsXPath);
         for(var i = 0; i < targets.length; i++)
